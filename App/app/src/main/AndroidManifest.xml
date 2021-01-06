@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ssg.ssglivetv">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.ssg.ssglivetv.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ssg.ssglivetv.MainActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.ssg.ssglivetv.IntroActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.ssg.ssglivetv.SignInActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.ssg.ssglivetv.ProfileActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.ssg.ssglivetv.ForgotPasswordActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.ssg.ssglivetv.MovieDetailsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.ssg.ssglivetv.SeriesDetailsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.ssg.ssglivetv.TVDetailsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name="com.ssg.ssglivetv.EmbeddedPlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name="com.ssg.ssglivetv.AllCommentActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.ssg.ssglivetv.RelatedAllMovieActivity"
+            android:configChanges="orientation"
+            />
+
+        <activity
+            android:name="com.ssg.ssglivetv.RelatedAllChannelActivity"
+            android:configChanges="orientation"
+            />
+
+        <activity
+            android:name="com.ssg.ssglivetv.RelatedAllSeriesActivity"
+            android:configChanges="orientation"
+            />
+
+        <activity
+            android:name="com.ssg.ssglivetv.SearchActivity"
+            android:configChanges="orientation"
+            />
+
+        <activity
+            android:name="com.ssg.ssglivetv.SearchHorizontalActivity"
+            android:configChanges="orientation"
+            />
+
+        <activity
+            android:name="com.ssg.ssglivetv.SearchAllMovieActivity"
+            android:configChanges="orientation"
+            />
+
+        <activity
+            android:name="com.ssg.ssglivetv.SearchAllChannelActivity"
+            android:configChanges="orientation"
+            />
+
+        <activity
+            android:name="com.ssg.ssglivetv.SearchAllSeriesActivity"
+            android:configChanges="orientation"
+            />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Activity required to show ad overlays. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+        <meta-data
+            android:name="com.onesignal.NotificationAccentColor.DEFAULT"
+            android:value="FF1C6CC3" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.ssg.cast.CastOptionsProvider" />
+
+        <activity
+            android:name="com.ssg.cast.ExpandedControlsActivity"
+            android:theme="@style/Theme.CastVideosDark" />
+
+    </application>
+
+</manifest>
