@@ -9,8 +9,8 @@ android {
                                 onesignal_google_project_number: "REMOTE"]
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 11
+        versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
@@ -49,10 +49,10 @@ dependencies {
     implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'com.github.ornolfr:rating-view:0.1.2@aar'
     implementation 'org.greenrobot:eventbus:3.1.1'
-    implementation 'com.github.chuross:expandable-layout:1.0.5'
+    //implementation 'com.github.chuross:expandable-layout:1.0.5'
     implementation 'me.relex:circleindicator:1.2.2@aar'
     implementation "com.google.android.exoplayer:exoplayer:2.9.6"
-    implementation 'com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0'
+    //implementation 'com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0'
     implementation 'com.google.android.gms:play-services-ads:17.2.1'
     implementation 'com.google.firebase:firebase-messaging:18.0.0'
     implementation 'com.google.android.gms:play-services-location:16.0.0'
